@@ -26,7 +26,7 @@ export class EmailEhUnicoValidator implements ValidatorConstraintInterface {
 }
 
 export const EmailEhUnico = (opcoesDeValidacao: ValidationOptions) => {
-  return (objeto: Object, propriedade: string) => {
+  return (objeto: object, propriedade: string) => {
     registerDecorator({
       target: objeto.constructor,
       propertyName: propriedade,
@@ -53,7 +53,7 @@ export class NomeEhUnicoValidator implements ValidatorConstraintInterface {
   }
 }
 export const IsNomeUsuarioUnico = (opcoesDeValidacao: ValidationOptions) => {
-  return (objeto: Object, propriedade: string) => {
+  return (objeto: object, propriedade: string) => {
     registerDecorator({
       target: objeto.constructor,
       propertyName: propriedade,

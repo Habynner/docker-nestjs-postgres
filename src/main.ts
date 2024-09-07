@@ -9,8 +9,8 @@ async function bootstrap() {
     new ValidationPipe({
       transform: true,
       whitelist: true,
-      forbidUnknownValues: true
-    })
+      forbidUnknownValues: true,
+    }),
   );
   //useContainer serve para constituir injeçao de dependencia
   //método select precisa receber como parâmetro um módulo, o módulo representante da minha aplicação, que é o AppModule
